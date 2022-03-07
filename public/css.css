@@ -1,0 +1,18 @@
+body {
+    background-color: wheat;
+}
+
+.highlight {
+    color: brown;
+}
+
+.code {
+    line-height: 140%;
+    color: blue;
+    border-style: solid;
+    border-width: 1px;
+    border-color: aquamarine;
+    background-color: yellowgreen;
+    padding-left: 3px;
+    padding-right: 3px;
+}

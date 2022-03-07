@@ -1,0 +1,29 @@
+<h1>Express</h1>
+<h2>About</h2>
+<p>
+    Express is an unopinionated Node.js module that provides tools (a library) for HTTP servers.<br>
+    These include functions for HTTP responses, requests, redirection, a bunch of middleware and much more.<br>
+    Unopinionated means that it doesn't force you to use any specific tools to, for example, parse JSON, but instead you can choose freely what fits you best.<br>
+</p>
+<h2>App and pure data CRUDable REST API</h2>
+<p>
+    Express uses a file typically called <span class="highlight">app.js</span> as its entrypoint.<br>
+    That file is used to import the Express module and initialize it as our server instance.<br>
+    Under this section you can see how a typical app.js file looks in a Node.js Express project.<br>
+    There's also a picture of how a full CRUDable REST API looks in Express. This can either be written directly in the app.js file or as seen in the example below, imported as a router.
+</p>
+<img src="../images/nodejstypicalapp.PNG" alt="Typical app.js in a Node.js Express project">
+<img src="../images/router.PNG" alt="Router for Express">
+<img src="../images/CRUDroutes.PNG" alt="Full CRUD for an API about movies">
+<h2>Sending files and SSR</h2>
+<p>
+    Express also allows you to send HTML files through a route. This allows you to have your HTML pages saved as templates and served through the router.<br>
+</p>
+<img src="../images/clientrender.PNG" alt="Client side rendering">
+<p>
+    Additionally, you can do Server Side Rendering (SSR), by loading the contents of your HTML files with the File System (fs) module and then sending the already "painted" pages.<br>
+    It can be an advantage to do this because the contents of the page are painted on the server and therefore instantly show up on the client, which makes it easier for search engines to find and suggest your site based on the contents.<br>
+    This also allows you to split your pages up into snippets (navbar, body, footer) and then concatenating them however you want.<br>
+    This makes it easy to have a consistent layout, where the navbar and footer, for example, are shared across the entire site.<br>
+</p>
+<img src="../images/serverrender.PNG" alt="Server side rendering">

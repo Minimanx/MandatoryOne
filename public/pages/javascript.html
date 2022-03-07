@@ -1,0 +1,83 @@
+<h1>JavaScript</h1>
+<h2>About</h2>
+<p>
+    JavaScript is a programming language mainly used for client side execution in web pages.<br>
+    However, it is also used in non-browser environments such as Node.js.<br>
+</p>
+<h2>Variable</h2>
+<p>
+    Variables are containers that we use for storing data.<br>
+    There are 3 ways to declare variables.<br>
+</p>
+<ul>
+    <li>
+        <p>var</p>
+    </li>
+    <li>
+        <p>let</p>
+    </li>
+    <li>
+        <p>const</p>
+    </li>
+</ul>
+<p>
+    <span class="highlight">Var</span> should avoid being used. It has a global scope and is the least specific of the 3.<br>
+    <span class="highlight">Const</span> should be used when possible. It cannot be reassigned to. If a variable needs to be reassigned at some point, use <span class="highlight">let</span>.<br>
+    <span class="highlight">Let</span> can be reassigned to and is therefore not immutable as some would say <span class="highlight">const</span> is.<br>
+    Both <span class="highlight">const</span> and <span class="highlight">let</span> are block scoped and only function within their given scope.<br>
+</p>
+<h2>Objects</h2>
+<p>
+    Objects in JavaScript are variables that can contain several values as properties / <span class="code">{key:"value"}</span> pairs.
+</p>
+<h2>Type Coercion</h2>
+<p>
+    Type coercion in JavaScript is something that can happen in JavaScript when comparing different values.<br>
+    Generally speaking, the <span class="code">==</span> operator coerces. That means <span class="code">1 == "1"</span> would result in true, even though the data type is different.<br>
+    To avoid this we add an extra equals sign i.e. <span class="code">===</span>.<br>
+    This, of course, also works for inequality. <span class="code">!=</span> vs <span class="code">!==</span>.
+</p>
+<h2>Functions</h2>
+<p>
+    Functions in JavaScript are <br>
+    You can return values in a function with the <span class="code">result</span> keyword.<br>
+    You can also save functions as variables, most commonly as a <span class="highlight">const</span>.<br>
+    Functions in <span class="highlight">JS</span> are hoisted, which means that function declarations gets hoisted to the top of their scope. This, however, doesn't work for functions that are saved to variables.
+</p>
+<img src="../images/hoistingfunction.PNG" alt="Hoisiting Function">
+<img src="../images/hoistingfunctionasconst.PNG" alt="Hoisiting Function As Const">
+<h2>Callback Functions</h2>
+<p>
+    A callback function is a function that is passed to another function as a parameter.<br>
+    This can be used to run functions parallel with other functions (asynchronous).<br>
+</p>
+<img src="../images/callback1.PNG" alt="Callback example 1">
+<img src="../images/callback2.PNG" alt="Callback example 2">
+<h2>Loops</h2>
+<p>
+    There are a few different ways to iterate through arrays in JavaScript.<br>
+    Generally speaking, we don't want to use for loops or while loops to do so. For loops should be used for "finger counting" and while loops for when something needs to be executed until the intended job is finished.<br>
+    The main built in functions for iterating through an array are:<br>
+</p>
+<ul>
+    <li>
+        forEach
+    </li>
+    <li>
+        map
+    </li>
+    <li>
+        filter
+    </li>
+</ul>
+<p>
+    All these functions takes a callback function as an argument.<br>
+    <span class="code">forEach</span> executes the provided function on each element, but doesn't return anything (undefined).<br>
+    <span class="code">map</span> creates a new array, adds the result of calling the provided function on each element and then returns the new array.<br>
+    <span class="code">filter</span> similarly creates a new array, adds all elements that pass a test provided by the callback function and returns the new array.<br>
+</p>
+<img src="../images/foreach.PNG" alt="forEach example">
+<img src="../images/map.PNG" alt="map example">
+<img src="../images/filter.PNG" alt="filter example">
+<h3>Commands</h3>
+
