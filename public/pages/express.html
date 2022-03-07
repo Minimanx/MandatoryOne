@@ -7,23 +7,39 @@
 </p>
 <h2>App and pure data CRUDable REST API</h2>
 <p>
-    Express uses a file typically called <span class="highlight">app.js</span> as its entrypoint.<br>
+    Express uses a file typically called app.js as its entrypoint.<br>
     That file is used to import the Express module and initialize it as our server instance.<br>
     Under this section you can see how a typical app.js file looks in a Node.js Express project.<br>
     There's also a picture of how a full CRUDable REST API looks in Express. This can either be written directly in the app.js file or as seen in the example below, imported as a router.
 </p>
-<img src="../images/nodejstypicalapp.PNG" alt="Typical app.js in a Node.js Express project">
-<img src="../images/router.PNG" alt="Router for Express">
-<img src="../images/CRUDroutes.PNG" alt="Full CRUD for an API about movies">
+
+<figure>
+    <img src="../images/nodejstypicalapp.PNG" alt="Typical app.js in a Node.js Express project">
+    <figcaption>Typical app.js in a Node.js Express project</figcaption>
+</figure>
+<figure>
+    <img src="../images/router.PNG" alt="Router for Express">
+    <figcaption>Router for Express</figcaption>
+</figure>
+<figure>
+    <img src="../images/CRUDroutes.PNG" alt="Full CRUD for an API about movies">
+    <figcaption>Full CRUD for an API about movies</figcaption>
+</figure>
 <h2>Sending files and SSR</h2>
 <p>
     Express also allows you to send HTML files through a route. This allows you to have your HTML pages saved as templates and served through the router.<br>
 </p>
-<img src="../images/clientrender.PNG" alt="Client side rendering">
+<figure>
+    <img src="../images/clientrender.PNG" alt="Client side rendering">
+    <figcaption>Client side rendering</figcaption>
+</figure>
 <p>
     Additionally, you can do Server Side Rendering (SSR), by loading the contents of your HTML files with the File System (fs) module and then sending the already "painted" pages.<br>
     It can be an advantage to do this because the contents of the page are painted on the server and therefore instantly show up on the client, which makes it easier for search engines to find and suggest your site based on the contents.<br>
     This also allows you to split your pages up into snippets (navbar, body, footer) and then concatenating them however you want.<br>
     This makes it easy to have a consistent layout, where the navbar and footer, for example, are shared across the entire site.<br>
 </p>
-<img src="../images/serverrender.PNG" alt="Server side rendering">
+<figure>
+    <img src="../images/serverrender.PNG" alt="Server side rendering">
+    <figcaption>Server side rendering</figcaption>
+</figure>

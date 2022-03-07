@@ -1,0 +1,130 @@
+<h1>RESTful API</h1>
+<h2>About</h2>
+<p>
+    REST is an architectural style described by six constraints.<br>
+    The constraints are pretty lengthy and complicated, so I won't get into those. You can read about them <a
+        href="https://www.restapitutorial.com/">here</a>.
+    <br>
+    RESTful APIs takes requests of the HTTP CRUD methods to retrieve, modify or create data on the server.<br>
+    The most common ones are:<br>
+</p>
+<ul>
+    <li>
+        <p>GET</p>
+    </li>
+    <li>
+        <p>POST</p>
+    </li>
+    <li>
+        <p>PUT/PATCH</p>
+    </li>
+    <li>
+        <p>DELETE</p>
+    </li>
+</ul>
+<p>
+    We can also add data to the body of requests, which are then used on our server in whatever way we choose.<br>
+    Additionally, it is also possible to send data through the URL in 2 different ways:
+</p>
+<ul>
+    <li>
+        <p>
+            Path Variable
+        </p>
+    </li>
+    <li>
+        <p>
+            Query String
+        </p>
+    </li>
+</ul>
+<p>
+    A path variable is information sent after a / in the url as such: <span class="code">www.api.com/apis/1</span> (the
+    1 being the variable).<br>
+    They are usually used to identify a specific resource, via for example, an ID.<br>
+    On the other hand, query strings are usually used for filtering when you're expecting multiple results: <span
+        class="code">www.api.com/apis?name=cool</span> (?name=cool being the query).<br>
+    This looks at our list and returns all apis that have the name "cool" or contains "cool". That depends on how you
+    decide to implement it.
+</p>
+<h2>Typical Endpoints for a RESTful API</h2>
+
+<table>
+    <tr>
+        <th>
+            Method
+        </th>
+        <th>
+            Endpoint
+        </th>
+        <th>
+            Result
+        </th>
+    </tr>
+    <tr>
+        <td>
+            GET
+        </td>
+        <td>
+            /movies
+        </td>
+        <td>
+            Retrieves all movies
+        </td>
+    </tr>
+    <tr>
+        <td>
+            GET
+        </td>
+        <td>
+            /movies/:id
+        </td>
+        <td>
+            Retrieves a movie with the given id
+        </td>
+    </tr>
+    <tr>
+        <td>
+            POST
+        </td>
+        <td>
+            /movies
+        </td>
+        <td>
+            Creates a new movie
+        </td>
+    </tr>
+    <tr>
+        <td>
+            PUT
+        </td>
+        <td>
+            /movies/:id
+        </td>
+        <td>
+            Updates a movie with the given id
+        </td>
+    </tr>
+    <tr>
+        <td>
+            PATCH
+        </td>
+        <td>
+            /movies/:id
+        </td>
+        <td>
+            Partially updates a movie with the given id
+        </td>
+    </tr>
+    <tr>
+        <td>
+            DELETE
+        </td>
+        <td>
+            /movies/:id
+        </td>
+        <td>
+            Deletes a movie with the given id
+        </td>
+    </tr>
+</table>

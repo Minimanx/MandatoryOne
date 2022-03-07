@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 body {
-    background-color: wheat;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
 }
 
 .highlight {
@@ -7,12 +11,66 @@ body {
 }
 
 .code {
-    line-height: 140%;
-    color: blue;
+    line-height: 1.7em;
+    color: red;
     border-style: solid;
     border-width: 1px;
-    border-color: aquamarine;
-    background-color: yellowgreen;
+    border-color: #d4d4d4;
+    background-color: white;
     padding-left: 3px;
     padding-right: 3px;
+    font-family: 'Space Mono', monospace;
+}
+
+nav {
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+    background: white;
+    padding: 1%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+}
+.main-container {
+    padding: 2%;
+}
+
+img {
+    border: 1px solid #d4d4d4;
+    vertical-align: top;
+}
+
+figcaption {
+    color: #5b5b5b;
+    font-size: 0.9em;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+th {
+    padding: 0px 8px 4px 8px;
+    text-align: left;
+}
+
+td {
+    padding: 0px 8px 4px 8px;
+}
+
+.concealed {
+    font-size: 0.6em;
 }

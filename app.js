@@ -22,6 +22,9 @@ const nodejsFinal = navbar + nodejs + footer;
 const expressPage = fs.readFileSync("./public/pages/express.html");
 const expressPageFinal = navbar + expressPage + footer;
 
+const restfulapi = fs.readFileSync("./public/pages/restfulapi.html");
+const restfulapiFinal = navbar + restfulapi + footer;
+
 const links = fs.readFileSync("./public/pages/links.html");
 const linksFinal = navbar + links + footer;
 
@@ -43,6 +46,10 @@ app.get("/nodejs", (req, res) => {
 
 app.get("/express", (req, res) => {
     res.send(expressPageFinal);
+});
+
+app.get("/restfulapi", (req, res) => {
+    res.send(restfulapiFinal);
 });
 
 app.get("/links", (req, res) => {

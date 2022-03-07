@@ -21,10 +21,10 @@
     </li>
 </ul>
 <p>
-    <span class="highlight">Var</span> should avoid being used. It has a global scope and is the least specific of the 3.<br>
-    <span class="highlight">Const</span> should be used when possible. It cannot be reassigned to. If a variable needs to be reassigned at some point, use <span class="highlight">let</span>.<br>
-    <span class="highlight">Let</span> can be reassigned to and is therefore not immutable as some would say <span class="highlight">const</span> is.<br>
-    Both <span class="highlight">const</span> and <span class="highlight">let</span> are block scoped and only function within their given scope.<br>
+    Var should avoid being used. It has a global scope and is the least specific of the 3.<br>
+    Const should be used when possible. It cannot be reassigned to. If a variable needs to be reassigned at some point, use let.<br>
+    Let can be reassigned to and is therefore not immutable as some would say const is.<br>
+    Both const and let are block scoped and only function within their given scope.<br>
 </p>
 <h2>Objects</h2>
 <p>
@@ -41,18 +41,30 @@
 <p>
     Functions in JavaScript are <br>
     You can return values in a function with the <span class="code">result</span> keyword.<br>
-    You can also save functions as variables, most commonly as a <span class="highlight">const</span>.<br>
-    Functions in <span class="highlight">JS</span> are hoisted, which means that function declarations gets hoisted to the top of their scope. This, however, doesn't work for functions that are saved to variables.
+    You can also save functions as variables, most commonly as a const.<br>
+    Functions in JS are hoisted, which means that function declarations gets hoisted to the top of their scope. This, however, doesn't work for functions that are saved to variables.
 </p>
-<img src="../images/hoistingfunction.PNG" alt="Hoisiting Function">
-<img src="../images/hoistingfunctionasconst.PNG" alt="Hoisiting Function As Const">
+<figure>
+    <img src="../images/hoistingfunction.PNG" alt="Hoisiting Function">
+    <figcaption>Hoisiting Function</figcaption>
+</figure>
+<figure>
+    <img src="../images/hoistingfunctionasconst.PNG" alt="Hoisiting Function As Const">
+    <figcaption>Hoisiting Function As Const</figcaption>
+</figure>
 <h2>Callback Functions</h2>
 <p>
     A callback function is a function that is passed to another function as a parameter.<br>
     This can be used to run functions parallel with other functions (asynchronous).<br>
 </p>
-<img src="../images/callback1.PNG" alt="Callback example 1">
-<img src="../images/callback2.PNG" alt="Callback example 2">
+<figure>
+    <img src="../images/callback1.PNG" alt="Callback example 1">
+    <figcaption>Callback example 1</figcaption>
+</figure>
+<figure>
+    <img src="../images/callback2.PNG" alt="Callback example 2">
+    <figcaption>Callback example 2</figcaption>
+</figure>
 <h2>Loops</h2>
 <p>
     There are a few different ways to iterate through arrays in JavaScript.<br>
@@ -76,8 +88,17 @@
     <span class="code">map</span> creates a new array, adds the result of calling the provided function on each element and then returns the new array.<br>
     <span class="code">filter</span> similarly creates a new array, adds all elements that pass a test provided by the callback function and returns the new array.<br>
 </p>
-<img src="../images/foreach.PNG" alt="forEach example">
-<img src="../images/map.PNG" alt="map example">
-<img src="../images/filter.PNG" alt="filter example">
-<h3>Commands</h3>
+<figure>
+    <img src="../images/foreach.PNG" alt="forEach example">
+    <figcaption>forEach example</figcaption>
+</figure>
+<figure>
+    <img src="../images/map.PNG" alt="map example">
+    <figcaption>map example</figcaption>
+</figure>
+<figure>
+    <img src="../images/filter.PNG" alt="filter example">
+    <figcaption>filter example</figcaption>
+</figure>
+
 
